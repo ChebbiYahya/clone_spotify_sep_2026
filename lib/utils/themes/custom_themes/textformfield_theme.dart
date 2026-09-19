@@ -47,7 +47,7 @@ class TTextFormFieldTheme {
       // Arrondi de la bordure.
       borderRadius: BorderRadius.circular(14),
       // Couleur et largeur de la bordure.
-      borderSide: const BorderSide(width: 1, color: TColors.grey),
+      borderSide: const BorderSide(width: 2, color: TColors.grey),
     ),
     // Bordure en erreur.
     errorBorder: const OutlineInputBorder().copyWith(

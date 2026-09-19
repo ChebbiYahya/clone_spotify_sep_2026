@@ -82,15 +82,14 @@ class _TestFormFieldState extends State<TestFormField> {
                       // Placeholder.
                       hintText: 'johndoe@example.com',
                     ),
-                    validator:
-                        MultiValidator([
-                          // Champ requis.
-                          RequiredValidator(errorText: "* Required"),
-                          // Format email valide.
-                          EmailValidator(
-                            errorText: "Please enter a valid email address.",
-                          ),
-                        ]).call,
+                    validator: MultiValidator([
+                      // Champ requis.
+                      RequiredValidator(errorText: "* Required"),
+                      // Format email valide.
+                      EmailValidator(
+                        errorText: "Please enter a valid email address.",
+                      ),
+                    ]).call,
 
                     // Validateurs du champ.
                   ),
@@ -129,23 +128,20 @@ class _TestFormFieldState extends State<TestFormField> {
                       ),
                     ),
                     // Validateurs du champ.
-                    validator:
-                        MultiValidator([
-                          // Champ requis.
-                          RequiredValidator(errorText: "* Required"),
-                          // Longueur minimale.
-                          MinLengthValidator(
-                            6,
-                            errorText:
-                                "Password must be at least 6 characters.",
-                          ),
-                          // Longueur maximale.
-                          MaxLengthValidator(
-                            15,
-                            errorText:
-                                "Password must not exceed 15 characters.",
-                          ),
-                        ]).call,
+                    validator: MultiValidator([
+                      // Champ requis.
+                      RequiredValidator(errorText: "* Required"),
+                      // Longueur minimale.
+                      MinLengthValidator(
+                        6,
+                        errorText: "Password must be at least 6 characters.",
+                      ),
+                      // Longueur maximale.
+                      MaxLengthValidator(
+                        15,
+                        errorText: "Password must not exceed 15 characters.",
+                      ),
+                    ]).call,
                   ),
                   // Espacement vertical.
                   SizedBox(height: 20),

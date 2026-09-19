@@ -42,7 +42,7 @@ class TestButton extends StatelessWidget {
               // Style du bouton.
               style: ElevatedButton.styleFrom(
                 // Largeur étendue.
-                minimumSize: Size(double.infinity, 50),
+                minimumSize: Size(double.infinity, 1),
               ),
               // Libellé du bouton.
               child: Text('Expanded Elevated Button'),

@@ -48,6 +48,15 @@ class TestShowDialog extends StatelessWidget {
                       // Libellé du bouton.
                       child: Text('Close'),
                     ),
+                    TextButton(
+                      // Action de fermeture.
+                      onPressed: () {
+                        // Ferme le dialogue.
+                        Navigator.of(context).pop();
+                      },
+                      // Libellé du bouton.
+                      child: Text('ok'),
+                    ),
                   ],
                 );
               },

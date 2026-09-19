@@ -1,7 +1,13 @@
-import 'package:clone_spotify_sep_2026/test_page.dart';
+import 'package:clone_spotify_sep_2026/screens/login/splash_page.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/login/signin_page.dart';
+import 'screens/login/signup_page.dart';
+import 'test_theme/test_bottomsheet.dart';
 import 'test_theme/test_button.dart';
+import 'test_theme/test_formfield.dart';
+import 'test_theme/test_showdialog.dart';
+import 'test_theme/test_text.dart';
 import 'utils/themes/theme.dart';
 
 void main() {
@@ -15,12 +21,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
 
-      home: TestButton(),
+      home: SplashPage(),
     );
   }
 }
