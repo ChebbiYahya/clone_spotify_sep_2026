@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
-import '../home/home_page.dart';
+import '../home/route.page.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -125,7 +125,7 @@ class _SignupPageState extends State<SignupPage> {
                         print("jawna behy");
                         Navigator.pushAndRemoveUntil(
                           context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
+                          MaterialPageRoute(builder: (context) => RoutePage()),
                           (Route<dynamic> route) => false,
                         );
                       } else {

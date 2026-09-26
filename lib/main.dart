@@ -1,6 +1,7 @@
 import 'package:clone_spotify_sep_2026/screens/login/splash_page.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/home/route.page.dart';
 import 'screens/login/signin_page.dart';
 import 'screens/login/signup_page.dart';
 import 'test_theme/test_bottomsheet.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
 
-      home: SplashPage(),
+      home: RoutePage(),
     );
   }
 }

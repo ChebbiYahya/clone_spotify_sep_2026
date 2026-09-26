@@ -1,10 +1,10 @@
-import 'package:clone_spotify_sep_2026/screens/home/home_page.dart';
 import 'package:clone_spotify_sep_2026/screens/login/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
 import '../../utils/constants/colors.dart';
+import '../home/route.page.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({super.key});
@@ -116,7 +116,7 @@ class _SigninPageState extends State<SigninPage> {
                       if (_formkey.currentState!.validate()) {
                         Navigator.pushAndRemoveUntil(
                           context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
+                          MaterialPageRoute(builder: (context) => RoutePage()),
                           (Route<dynamic> route) => false,
                         );
                         print("jawna behy");
